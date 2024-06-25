@@ -1,5 +1,5 @@
 name: Run pre-merge Databricks tests
-- name: Generate AAD Token
+name: Generate AAD Token
   run: |
     echo "DATABRICKS_TOKEN=$(curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' \
       https://login.microsoftonline.com/${{ secrets.23e4074d-1041-4d07-8c20-becbae523891}}/oauth2/v2.0/token \
