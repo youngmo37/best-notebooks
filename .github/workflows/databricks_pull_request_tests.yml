@@ -1,4 +1,4 @@
-name: Run pre-merge Databricks tests
+# name: Run pre-merge Databricks tests
 name: Generate AAD Token
   run: |
     echo "DATABRICKS_TOKEN=$(curl -X POST -H 'Content-Type: application/x-www-form-urlencoded' \
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
       - name: Run test notebook
-        uses: databricks/run-notebook@main
+        uses: databricks/run-notebook@master
         with:
           databricks-token: Iin8Q~F8Bo1LVBZGHzJ45T2sA.YCEAGStN1T_abi
 
